@@ -1,0 +1,53 @@
+$icon-font-path: '../fonts/';
+
+body {
+  width: 100%;
+  background: #FBBBB9;
+  margin: 0;
+  padding: 0;
+}
+
+.keys {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.key {
+  display: flex;
+  flex-direction: column;
+  padding: 1em 0.5em;
+  width: 6rem;
+  font-size: 1.25rem;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 10%;
+  margin: 0.75em;
+  color: white;
+  transition: all 0.07s;
+}
+
+kbd {
+  font-weight: 400;
+  font-family: Helvetica, Sans-Serif;
+  font-size: 2rem;
+}
+
+.sound {
+  font-weight: 800;
+  font-family: Helvetica, Sans-Serif;
+  font-size: 1.2rem;
+  letter-spacing: .1rem;
+}
+
+.playing {
+  transform: scale(1.1);
+  box-shadow: 0 0 1rem #fff;
+}
