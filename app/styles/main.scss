@@ -1,53 +1,29 @@
-$icon-font-path: '../fonts/';
+:root {
+  --base: #ffffff;
+  --spacing: 10px;
+  --blur: 10px;
+}
 
 body {
   width: 100%;
-  background: #FBBBB9;
+  background: #e0e0e0;
   margin: 0;
   padding: 0;
-}
-
-.keys {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-}
-
-.key {
-  display: flex;
-  flex-direction: column;
-  padding: 1em 0.5em;
-  width: 6rem;
-  font-size: 1.25rem;
   text-align: center;
-  border: 2px solid #fff;
-  border-radius: 10%;
-  margin: 0.75em;
-  color: white;
-  transition: all 0.07s;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 25px;
 }
 
-kbd {
-  font-weight: 400;
-  font-family: Helvetica, Sans-Serif;
-  font-size: 2rem;
+img {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
 }
 
-.sound {
-  font-weight: 800;
-  font-family: Helvetica, Sans-Serif;
-  font-size: 1.2rem;
-  letter-spacing: .1rem;
+label {
+  padding-right: 0.5em;
 }
 
-.playing {
-  transform: scale(1.1);
-  box-shadow: 0 0 1rem #fff;
+.controls {
+  margin: 2em;
 }
